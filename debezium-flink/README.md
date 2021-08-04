@@ -16,19 +16,22 @@ This package provides a docker environment with everything needed to have a self
 * MongoDB
 
 # Getting started
-Run the `deploy.sh` script to automate all the docker and deployment steps.
+1. Make sure the `3` volume paths defined in the `docker-compose.yml` map correctly to your filesystem. Change if needed.
+2. Run the `deploy.sh` script to automate all the docker and deployment steps.
 
 # Files
 `debezium.json`  
 The Debezium configuration that attaches to CDC events to it's specified database tables.
 
-`deploy.sh`  
+`deploy.sh`
+* Drops existing docker containers if already running.
+* Deploys all the docker containers.
 * Drops TA database.
 * Drops roles.
 * Re-creates the roles.
 * Imports Postgres backup into the Postgres docker container.
 * Deletes existing Debezium Kafka Connector configuration.
-* Re-creates the Debezium Kafka Connector configuration and attaches to all the qTest tables to start receiving CDC events.
+* Re-creates the Debezium Kafka Connector configuration and attaches to all the tables to start receiving CDC events.
 
 `docker-compose.yml`  
 Contains all the docker configuration for all the requires services.
