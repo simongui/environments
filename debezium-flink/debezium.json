@@ -7,7 +7,7 @@
     "database.user": "postgres", 
     "database.password": "postgres", 
     "database.dbname" : "my_database", 
-    "database.server.name": "my_server_name",
+    "database.server.name": "my_debezium_connector",
     "table.include.list": ""
   }
 }
