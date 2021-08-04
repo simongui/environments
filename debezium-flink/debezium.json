@@ -6,7 +6,7 @@
     "database.port": "5432", 
     "database.user": "postgres", 
     "database.password": "postgres", 
-    "database.dbname" : "postgres", 
+    "database.dbname" : "my_database", 
     "database.server.name": "my_server_name",
     "table.include.list": ""
   }
