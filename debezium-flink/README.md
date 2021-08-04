@@ -57,18 +57,13 @@ This file drops the old database and roles and re-creates them.
 `deploy.sh`. 
 Run this to automate all the docker+deployment steps to prepare the full docker environment.
 
-# Installation
-1. Change the volume paths mentioned above in `docker-compose.yml`
-2. `./start.sh`
-3. `./deploy.sh`
-
 # Verify installation
 
 Query Kafka Connect to ensure the Debezium connector is created.
 ```
 curl -H "Accept:application/json" localhost:8083/connectors
 
-["tricentis-analytics-connector"]
+["my_debezium_connector"]
 ```
 
 If the Kafka Connector isn't deployed you'll get a response like the following.
