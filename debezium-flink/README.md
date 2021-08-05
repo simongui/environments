@@ -17,7 +17,8 @@ This package provides a docker environment with everything needed to have a self
 
 # Getting started
 1. Make sure the `3` volume paths defined in the `docker-compose.yml` map correctly to your filesystem. Change if needed.
-2. Run the `deploy.sh` script to automate all the docker and deployment steps.
+2. Name your postgres backup `database.backup`.
+3. Run the `deploy.sh` script to automate all the docker and deployment steps.
 
 # Files
 `debezium.json`  
