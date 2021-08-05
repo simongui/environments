@@ -30,7 +30,7 @@ The Debezium configuration that attaches to CDC events to it's specified databas
 `deploy.sh`
 * Drops existing docker containers if already running.
 * Deploys all the docker containers.
-* Drops TA database.
+* Drops database.
 * Drops roles.
 * Re-creates the roles.
 * Imports Postgres backup into the Postgres docker container.
