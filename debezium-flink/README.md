@@ -20,7 +20,8 @@ This package deploys the containers, restores a postgres backup and connects the
 # Getting started
 1. Make sure the `3` volume paths defined in the `docker-compose.yml` map correctly to your filesystem. Change if needed.
 2. Name your postgres backup `database.backup`.
-3. Run the `deploy.sh` script to automate all the docker and deployment steps.
+3. Edit 1debezium.json` and add the tables you want Debezium to stream into Kafka topics.
+4. Run the `deploy.sh` script to automate all the docker and deployment steps.
 
 # Files
 `debezium.json`  
