@@ -70,17 +70,6 @@ services:
     image: digitsy/kafka-magic:latest
     ports:
      - 8080:80
-  mongodb:
-    image: mongo
-    container_name: mongodb
-    environment:
-     - PUID=1000
-     - PGID=1000
-    volumes:
-     - ~/.local/share/mongo:/data/db
-    ports:
-     - 27017:27017
-    restart: unless-stopped
   flink-jobmanager:
     image: ${FLINK_DOCKER_IMAGE_NAME:-flink}
     expose:
