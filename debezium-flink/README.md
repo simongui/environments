@@ -13,7 +13,6 @@ This package provides a docker environment with everything needed to have a self
 * Flink
   * Flink Job Manager
   * Flink Task Manager
-* MongoDB
 
 This package deploys the containers, restores a postgres backup and connects the debezium connector and creates all the topics for the database tables.
 
@@ -47,12 +46,6 @@ Postgres
 volumes:
      - ~/.local/share/kafka-connect/config:/kafka/config
      - ~/.local/share/kafka-connect/logs:/kafka/logs
-```
-
-MongoDB
-```
-volumes:
-     - ~/.local/share/mongo:/data/db
 ```
 
 `prepare.sql`  
